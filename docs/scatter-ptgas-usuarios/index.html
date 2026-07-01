@@ -4,8 +4,28 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Peso de la biblioteca en el PTGAS | REBIUN Data Explorer</title>
-  <link rel="stylesheet" href="../../assets/css/style.css">
   <style>
+    body {
+      margin: 0;
+      background: #f7f8fa;
+      color: #1f2933;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    main {
+      width: min(1240px, calc(100% - 32px));
+      margin: 0 auto;
+      padding: 28px 0 40px;
+      overflow-x: auto;
+    }
+
+    h1 {
+      width: min(1240px, calc(100% - 32px));
+      margin: 0 auto;
+      padding: 32px 0 0;
+      font-size: clamp(1.8rem, 4vw, 2.8rem);
+      line-height: 1.15;
+    }
     #vis.vega-embed {
       width: 100%;
       display: flex;
@@ -21,23 +41,10 @@
   <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/vega-embed@7"></script>
 </head>
 <body>
-  <header class="site-header compact">
-    <div class="container">
-      <nav class="breadcrumbs" aria-label="Ruta de navegación">
-        <a href="../../">Inicio</a>
-        <span aria-hidden="true">&gt;</span>
-        <a href="../">Recursos Humanos</a>
-        <span aria-hidden="true">&gt;</span>
-        <span>Visualización</span>
-      </nav>
-      <h1>Peso de la biblioteca en el PTGAS y personas usuarias por plantilla bibliotecaria</h1>
-    </div>
-  </header>
+  <h1>Peso de la biblioteca en el PTGAS y personas usuarias por plantilla bibliotecaria</h1>
 
-  <main class="container visualization-shell">
-    <section class="visualization-panel" aria-label="Gráfico interactivo">
-      <div id="vis"></div>
-    </section>
+  <main>
+    <div id="vis"></div>
   </main>
   <script>
     (function(vegaEmbed) {
@@ -60,4 +67,5 @@
   </script>
 </body>
 </html>
+
 
