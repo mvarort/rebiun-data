@@ -19,12 +19,40 @@
       overflow-x: auto;
     }
 
-    h1 {
+    .page-header {
+      background: #ffffff;
+      border-bottom: 1px solid #d9e2ec;
+      margin-bottom: 20px;
+    }
+
+    .page-header-inner {
       width: min(1240px, calc(100% - 32px));
       margin: 0 auto;
-      padding: 32px 0 0;
-      font-size: clamp(1.8rem, 4vw, 2.8rem);
-      line-height: 1.15;
+      padding: 22px 0 18px;
+    }
+
+    .site-label {
+      margin: 0 0 7px;
+      color: #2f6b8f;
+      font-size: 0.74rem;
+      font-weight: 700;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+    }
+
+    .page-title {
+      margin: 0;
+      color: #1f2933;
+      font-size: clamp(1.15rem, 2vw, 1.55rem);
+      font-weight: 700;
+      line-height: 1.25;
+    }
+
+    .page-meta {
+      margin: 8px 0 0;
+      color: #66788a;
+      font-size: 0.92rem;
+      line-height: 1.45;
     }
     #vis.vega-embed {
       width: 100%;
@@ -41,7 +69,13 @@
   <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/vega-embed@7"></script>
 </head>
 <body>
-  <h1>Peso de la biblioteca en el PTGAS y personas usuarias por plantilla bibliotecaria</h1>
+  <header class="page-header">
+    <div class="page-header-inner">
+      <p class="site-label">REBIUN DATA EXPLORER</p>
+      <p class="page-title">Peso institucional de la biblioteca y presión potencial sobre la plantilla, 2025</p>
+      <p class="page-meta">Miguel Varo Ortega · Actualizado: 1 julio 2026 · Fuente: Estadísticas REBIUN 2025 · Versión 1.0</p>
+    </div>
+  </header>
 
   <main>
     <div id="vis"></div>
@@ -67,5 +101,7 @@
   </script>
 </body>
 </html>
+
+
 
 
